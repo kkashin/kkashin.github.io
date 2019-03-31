@@ -1,0 +1,59 @@
+# SEO settings
+title: "Konstantin Kashin"
+description: "Konstantin Kashin is an Engineering Manager at Facebook, interested in causal inference, experimentation, and optimization."
+keywords: "data science, engineering, causal inference, A/B testing, experimentation, optimization"
+url: http://konstantinkashin.com
+baseurl: null
+
+google_analytics: UA-29054835-1
+repo: http://github.com/kkashin/kkashin.github.io
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+paginate: 4
+paginate_path: "/page/:num/"
+comments: true
+
+source: source
+destination: _site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : Konstantin Kashin
+  job      : Engineering Manager
+  bio      : "Engineering Manager at Facebook."
+  thumb    : /images/author.jpg
+  email    : kkashin@fb.com
+  url      : http://konstantinkashin.com
+  github   : http://github.com/kkashin
+  linkedin : https://linkedin.com/in/konstantin-kashin-8939a492/
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_username: "@kostyakashin"
+github_username: "kkashin"
+linkedin_username: "konstantin-kashin-8939a492"
+
+plugins:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : projects
+    title: Projects
+  - slug : data
+    title: Data
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
