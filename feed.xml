@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Konstantin Kashin</title>
+    <description>Konstantin Kashin is an Engineering Manager at Facebook, interested in causal inference, experimentation, and optimization.</description>
+    <link>http://konstantinkashin.com/</link>
+    <atom:link href="http://konstantinkashin.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 31 Mar 2019 17:49:58 -0400</pubDate>
+    <lastBuildDate>Sun, 31 Mar 2019 17:49:58 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Big Data and the Social Sciences</title>
+        <description>&lt;p&gt;I recently had the honor of giving a talk with &lt;a href=&quot;http://scholar.harvard.edu/aglynn/&quot;&gt;Adam Glynn&lt;/a&gt; at &lt;a href=&quot;http://bigdata.unl.edu/news-events#agenda&quot;&gt;The Future of Big Data Symposium&lt;/a&gt; at the University of Nebraska-Lincoln. The talk, entitled “Challenges of Big Data in the Social Sciences”, can be viewed here:
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/7KZB2gYdKXU&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the talk, we presented results from two papers (in addition to broader reflections on big data in the social sciences):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A &lt;a href=&quot;assets/research/fddid.pdf&quot;&gt;paper&lt;/a&gt; with &lt;a href=&quot;http://scholar.harvard.edu/aglynn/&quot;&gt;Adam Glynn&lt;/a&gt; estimating the effect of early voting on turnout in Florida using front-door difference-in-differences techniques;&lt;/li&gt;
+  &lt;li&gt;A working paper with &lt;a href=&quot;http://www.hertelfernandez.com/&quot;&gt;Alexander Hertel-Fernandez&lt;/a&gt; using text analysis to examine the success of the American Legislative Exchange Council in introducing and enacting model legislation across the American states.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 04 Dec 2014 00:00:00 -0500</pubDate>
+        <link>http://konstantinkashin.com/2014/big-data-unl/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2014/big-data-unl/</guid>
+        
+        <category>big data</category>
+        
+        <category>data science</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Data Visualization &amp; Databits</title>
+        <description>&lt;p&gt;I am a big fan of interactive data visualization for data exploration and presenting research findings, and thus I wanted to share a new site &lt;a href=&quot;http://nesterko.com/&quot;&gt;Sergiy Nesterko&lt;/a&gt; recently launched called &lt;a href=&quot;http://databits.io/&quot;&gt;Databits&lt;/a&gt;. The site features interactive visualizations built using a variety of tools (primarily D3.js, although there are a few recently examples in Processing.js), and the goal is to get a community of people interested in data visualization to showcase their work (including open-source code), interact with one another, and hopefully hone their skills in the process! It’s very much in its initial stages, but please join and contribute if you have visualizations you want to share.
+&lt;br /&gt;
+&lt;br /&gt;
+I’ve uploaded a few of my visualizations &lt;a href=&quot;http://databits.io/kkashin&quot;&gt;here&lt;/a&gt; and hope to upload more in the near future. One of the nice features of Databits is the ease with which you can embed a visualization in another website:
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;p class=&quot;databitembed&quot; data-id=&quot;18&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+This visualization is part of the broader &lt;a href=&quot;http://harvardx.harvard.edu/harvardx-insights&quot;&gt;HarvardX Insights&lt;/a&gt; project I contributed to.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Nov 2014 00:00:00 -0500</pubDate>
+        <link>http://konstantinkashin.com/2014/databits/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2014/databits/</guid>
+        
+        <category>data visualization</category>
+        
+        <category>D3.js</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Theory of Maximum Likelihood Estimation</title>
+        <description>&lt;p&gt;I’ve finally updated and uploaded a detailed note on maximum likelihood estimation, based in part on material I taught in Gov 2001. It is available in full &lt;a href=&quot;/assets/notes/Maximum_Likelihood_Estimation.pdf&quot;&gt;here&lt;/a&gt;.
+&lt;br /&gt;
+&lt;br /&gt;
+To summarize the note without getting into too much math, let’s first define the likelihood as proportional to the joint probability of the data conditional on the parameter of interest ($\theta$):
+&lt;script type=&quot;math/tex&quot;&gt;L(\theta|\mathbf{x}) \propto f(\mathbf{x}|\theta) = \prod\limits_{i=1}^n f(x_i|\theta)&lt;/script&gt;
+The maximum likelihood estimate (MLE) of $\theta$ is the value of $\theta$ in the parameter space $\Omega$ that maximizes the likelihood function:
+&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta}_{MLE} = \max_{\theta \in \Omega} L(\theta|\mathbf{x}) = \max_{\theta \in \Omega} \prod\limits_{i=1}^n f(x_i|\theta)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This turns out to be equivalent to maximizing the log-likelihood function (which is often simpler):
+&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta}_{MLE} = \max_{\theta \in \Omega} \log L(\theta|\mathbf{x}) = \max_{\theta \in \Omega} \ell (\theta|\mathbf{x}) = \max_{\theta \in \Omega} \sum\limits_{i=1}^n \log (f(x_i|\theta))&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;One can find the MLE either analytically (using calculus) or numerically (by using R or another program).
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;a-simple-example&quot;&gt;A Simple Example&lt;/h3&gt;
+&lt;p&gt;Suppose that we want to visualize the log-likelihood curve for data drawn from a Poisson distribution with an unknown parameter $\lambda$. The data we observe is {2,1,1,4,4,2,1,2,1,2}. In R, we can do this quite simply as:
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;my.data &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+pois.ll&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;dpois&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;my.data&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;lambda&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;log&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+pois.ll &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;Vectorize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;pois.ll&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+curve&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;pois.ll&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; from&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;to&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; lwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; xlab&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;expression&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;lambda&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;ylab&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Log-Likelihood&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+We already know (based on analytic solutions) that the MLE for $\lambda$ in a Poisson distribution is just the sample mean, which comes out to 2 in this case. Thus, we can mark it on the log-likelihood curve to produce the following graph:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/poisson_ll.jpg&quot;&gt;&lt;img alt=&quot;poisson likelihood curve&quot; src=&quot;/assets/images/blog/poisson_ll.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If we wanted to maximize the log-likelihood in R (on the parameter space [0,100], chosen because it’s sufficiently wide to encompass the MLE), we could have done:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;opt &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; optimize&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;pois.ll&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; interval&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;maximum&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+opt&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;maximum &lt;span class=&quot;c1&quot;&gt;# gives MLE&lt;/span&gt;
+opt&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;objective &lt;span class=&quot;c1&quot;&gt;# gives value of log-likelihood at MLE&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+R confirms our analytic solution.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;theory-of-maximum-likelihood-estimation&quot;&gt;Theory of Maximum Likelihood Estimation&lt;/h3&gt;
+&lt;p&gt;Why do we use maximum likelihood estimation? It turns out that subject to regularity conditions the following properties hold for the MLE:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Consistency: as sample size ($n$) increases, the MLE ($\hat{\theta}_{MLE}$) converges to the true parameter, $\theta_0$.
+&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta}_{MLE} \overset{p}{\longrightarrow} \theta_0&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Normality: As sample size ($n$) increases, the MLE is normally distributed with a mean equal to the true parameter ($\theta_0$) and the variance equal to the inverse of the expected sample Fisher information at the true parameter. However, using the consistency property of the MLE, we can use the inverse of the observed sample Fisher information evaluated at the MLE, denoted as $\mathcal{J}&lt;em&gt;n(\hat{\theta}&lt;/em&gt;{MLE})$ to approximate the variance. The observed sample Fisher information is the negation of the second derivative of the log-likelihood curve.
+&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta}_{MLE} \sim \mathcal{N} \left(\theta_0, \Big(\underbrace{- \Big( \dfrac{\partial^2 \ell(\theta|\mathbf{x})}{\partial \theta^2} \Big|_{\theta=\hat{\theta}_{MLE}} \Big)}_{\mathcal{J}_n(\hat{\theta}_{MLE})} \Big)^{-1} \right)&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Efficiency: maximum likelihood estimation generally provides the lowest variance as sample size increases.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 29 Apr 2014 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2014/theory-maximum-likelihood-estimation/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2014/theory-maximum-likelihood-estimation/</guid>
+        
+        <category>statistics</category>
+        
+        <category>R</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Network Visualization with D3.js</title>
+        <description>&lt;p&gt;Here is a visualization I constructed using D3.js based on a visualization for Harvard’s Stat 221 class of a network of individuals for whom HIV status is known (original visualization &lt;a href=&quot;http://theory.info/harvardstat221#?v=network-of-individuals-at-risk-of-hiv&quot;&gt;here&lt;/a&gt;). I wanted the visualization to maximally exploit the information available in the data, such as for example whether friendships are mostly seroconcordant (with individuals of the same HIV status) or serodiscordant. I also wanted to see if most friendships were of the same gender or not. Hence, I adapted the &lt;a href=&quot;http://bost.ocks.org/mike/hive/&quot;&gt;hive plot template&lt;/a&gt; for this network data. Here is a static picture of the resultant network:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/data/hiveplot.html&quot;&gt;&lt;img alt=&quot;d3 hive plot network&quot; src=&quot;/assets/images/blog/hive-plot.png&quot; height=&quot;513&quot; width=&quot;812&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Note that the two axes of the hive plot connote the HIV status of the individuals. The nodes are colored and ordered first by gender and then within each gender are subsequently ordered by the number of links, where the nodes closer to the origin of the axis are more well-connected. The links are also color-coded by whether they are friendships between the same gender or opposite genders. Whether a link is serodiscordant or seroconconcordant is evident from its placement relative to the axes.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The full, interactive visualization is available &lt;a href=&quot;/assets/data/hiveplot.html&quot;&gt;here&lt;/a&gt; and the code is available on &lt;a href=&quot;https://github.com/kkashin/dataviz&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+For those new to D3.js, here are some great resources for getting started:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://d3js.org/&quot;&gt;D3 homepage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bost.ocks.org/mike/&quot;&gt;Mike Bostock’s page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mbostock/d3/wiki/Tutorials&quot;&gt;D3 Tutorials Wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mentormob.com/learn/i/begin-with-d3js/d3js-principles-for-mere-mortals&quot;&gt;D3 for Mere Mortals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alignedleft.com/tutorials/d3/&quot;&gt;Scott Murray’s D3 Tutorials&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://christopheviau.com/d3_tutorial/&quot;&gt;Christophe Viau’s Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 22 Dec 2013 00:00:00 -0500</pubDate>
+        <link>http://konstantinkashin.com/2013/network-visualization-with-d3js/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/network-visualization-with-d3js/</guid>
+        
+        <category>data visualization</category>
+        
+        <category>D3.js</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Scraping PDFs and Word Documents with Python</title>
+        <description>&lt;p&gt;This week I wanted to write a Python script that was able to extract text from both pdf files and Microsoft Word documents (both .doc and .docx formats). This actually proved to be rather difficult, particularly when it came to both Microsoft Word since there was no one utility that was able to handle both the old Word format and the more recent .docx one. This post is a summary of the utilities that I came across and what I finally used to complete this task.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+First, with regards to pdf files, the main Python library for opening pdf files is &lt;a href=&quot;http://www.unixuser.org/~euske/python/pdfminer/&quot;&gt;PDFMiner&lt;/a&gt;. There exist several additional libraries that essentially serve as wrappers to PDFMiner, including &lt;a href=&quot;https://pypi.python.org/pypi/slate&quot;&gt;Slate&lt;/a&gt;. Slate is significantly simpler to use than PDFMiner, but this comes at the expense of very basic functionality. Even though I first tried to use Slate, it ended up not performing well for the pdfs I was working with. Specifically, it did not fully respect the original spacing between words, thereby cutting certain words into multiple fragments or concatenating others. I thus switched to PDFMiner because of its customizability. Using the pdf2txt.py command line utility, PDFMiner experienced a similar problem with word spacing. However, this turned out to be extremely easy to tune just using a word margin option passed to the pdf2txt.py utility. Specifically, I ran the following in the command line:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pdf2txt.py -o foo.txt -W 0.5 foo.pdf&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When it comes to Word 2007 .docx files, the Python-based utility that worked well is the &lt;a href=&quot;https://github.com/mikemaccana/python-docx&quot;&gt;python-docx&lt;/a&gt; library. It worked well in the command line as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./example-extracttext.py foo.docx foo.txt&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For older Word documents (for example Word 2003), the python-docx library does not work. I ended up using the C-based &lt;a href=&quot;http://linux.die.net/man/1/antiword&quot;&gt;antiword&lt;/a&gt; utility. Originally a Linux-based utility, antiword (version 0.37) can be installed on Mac OS X as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew update
+brew install antiword&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;From within Python, I was then easily able to convert a .doc document to text:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;antiword foo.doc &amp;gt; foo.txt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+</description>
+        <pubDate>Wed, 25 Sep 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/scraping-pdfs-and-word-documents-with-python/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/scraping-pdfs-and-word-documents-with-python/</guid>
+        
+        <category>python</category>
+        
+        <category>bash</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Note on Bivariate Regression</title>
+        <description>&lt;p&gt;I’ve just updated and uploaded a note on bivariate regression from a sampling perspective (based on GOV 2000 material):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/gov2000/bivar_reg.pdf&quot;&gt;Note on Bivariate Regression: Connecting Practice and Theory&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Sep 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/note-on-bivariate-regression/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/note-on-bivariate-regression/</guid>
+        
+        <category>regression</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Bootstrap Confidence Interval Methods in R</title>
+        <description>&lt;p&gt;This post briefly sketches out the types of bootstrapped confidence intervals commonly used, along with code in R for how to calculate them from scratch.
+Specifically, I focus on nonparametric confidence intervals. The post is structured around the list of bootstrap confidence interval methods provided by Canty et al. (1996).
+This is just a quick introduction into the world of bootstrapping - for an excellent R package for doing all sorts of bootstrapping, see the &lt;a href=&quot;http://cran.r-project.org/web/packages/boot/boot.pdf&quot;&gt;boot package&lt;/a&gt; by Brian Ripley.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Suppose that $x_1, x_2, …, x_n \sim f(\theta)$, where $f(\cdot)$ is some arbitrary probability distribution. We are interested in estimating $\theta$.
+Let $\hat{\theta}$ be the point estimate of the parameter of interest obtained from the original dataset.
+Note that these are nonparameteric confidence intervals (that is, we don’t assume that $f$ is a particular parametric family).
+The example comes from page 201 of DiCiccio and Efron (1996), which contains a dataset on five exams across 22 students (with some missing data).
+The parameter of interest is the maximum eigenvalue of the empirical covariance matrix. You may download the data &lt;a href=&quot;/assets/data/diciccioefron.csv&quot;&gt;here&lt;/a&gt;. The code for estimating the max eigenvalue is provided at the end of this post. The function is called &lt;code&gt;calculate.max.eigen&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using this function on the dataset, we obtain $\hat{\theta}=216.2$.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Now, suppose that we bootstrap the dataset M times and for each of the datasets, calculate $\hat{\theta}^*_{m}$, which is the point estimate of $\theta$ for the mth bootstrapped dataset. The empirical distribution of $\hat{\theta}^*$ is the bootstrap distribution and is an approximation to the sampling distribution for $\hat{\theta}$.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+To create $M=10000$ bootstrap replicates in R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;BS.eigen &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    index &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;nrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;nrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;replace&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    bs.data &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; data&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;index&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;calculate.max.eigen&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.data&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+bs.sampling &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;replicate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;BS.eigen&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;simplify&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here is the distribution of these estimates (with the median of the bootstrapped estimates denoted with the vertical blue line and $\hat{\theta}$ denoted with a vertical red line):&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/bootstrap_dist.jpg&quot;&gt;&lt;img alt=&quot;bootstrap distribution&quot; src=&quot;/assets/images/blog/bootstrap_dist.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We can then make use of the bootstrap distribution in a number of ways to obtained bootstrapped confidence intervals.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;normal-intervals&quot;&gt;Normal intervals&lt;/h3&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta} \pm z_{\alpha/2} \sigma_{bs},&lt;/script&gt;
+where $z_{\alpha/2}$ is the $\alpha/2$-quantile of the standard normal distribution and $\sigma_{bs}$ is the standard deviation of the bootstrap distribution. These intervals are justified by asymptotic theory (Central Limit Theorem).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;theta.hat &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;sd&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+theta.hat &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;sd&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain a confidence interval of [202.64,1050.01].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;transformed-normal-intervals&quot;&gt;Transformed normal intervals&lt;/h3&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;t^{-1}[t(\hat{\theta}) \pm z_{\alpha/2} \sigma_{tbs}],&lt;/script&gt;
+where $t(\cdot)$ is a variance-stabilizing square root transformation and $\sigma_{tbs}$ is the standard deviation of the transformed bootstrap distribution (distribution of $\hat{\theta}^*$).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;theta.hat&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;sd&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;theta.hat&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;sd&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain a confidence interval of [263.67, 1143.33].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-bootstrap-intervals&quot;&gt;Basic bootstrap intervals&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[2\hat{\theta}-\hat{\theta}^*_{m=(1-\alpha/2)M}, 2\hat{\theta}-\hat{\theta}^*_{m=(\alpha/2)M}]&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;theta.hat &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;theta.hat &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain a confidence interval of [186.45, 1018.62].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;transformed-basic-bootstrap-intervals&quot;&gt;Transformed basic bootstrap intervals&lt;/h3&gt;
+
+&lt;p&gt;These are basic bootstrap intervals with similar transformation to the transformed normal intervals.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;theta.hat&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;theta.hat&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain a confidence interval of [302.76, 1208.00].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;percentile-confidence-intervals&quot;&gt;Percentile confidence intervals&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\hat{\theta}^*_{m=(1-\alpha/2)M},\hat{\theta}^*_{m=(\alpha/2)M}]&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain a confidence interval of [233.93, 1066.10].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bca-confidence-intervals&quot;&gt;BCa confidence intervals&lt;/h3&gt;
+
+&lt;p&gt;A refinement on the percentile confidence interval method, designed to increase accuracy. Note that BCa reduces to standard percentile confidence intervals if the bootstrap distribution is unbiased (median of the distribution is equal to the original point estimate) and the acceleration (skewness) is zero.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;Step 1&lt;/em&gt;: Calculate the &lt;em&gt;bias-correction&lt;/em&gt; $\hat{z}_0$, which gives the standard normal quantile function of the proportion of bootstrapped estimates less than the original point estimate:
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\hat{z}\_0 = \Phi^{-1} \left\[\dfrac{\sum \{\hat{\theta}^\* &lt; \hat{\theta} \}}{M} \right\] %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;z0 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; theta.hat&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, $\hat{z}_0$ is 0.194, which indicates a positive bias correction. This follows from the fact that 57.7% of $\hat{\theta}^*$s are below the original point estimate $\hat{\theta}$ (downward bias). We can see this from the plot above since the median of the bootstrap distribution is to the left of the point estimate from the original dataset.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;Step 2&lt;/em&gt;: Calculate the &lt;em&gt;acceleration&lt;/em&gt; $a$, which has an interpretation of skewness (more specifically, it measures how rapidly standard error changes on a normalized scale). A non-parametric estimate of $a$ is:
+&lt;script type=&quot;math/tex&quot;&gt;\hat{a} = \dfrac{1}{6}\dfrac{\sum_{i=1}^n (\hat{\theta}-\hat{\theta}_{(i)})^3}{(\sum_{i=1}^n (\hat{\theta}-\hat{\theta}_{(i)})^2)^{3/2}}.&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;where $\hat{\theta}_{(i)}$ is the jackknifed estimate of the parameter, obtained by omitting observation $i$ from the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;jk.theta &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;sapply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;nrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    jk.data &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; data&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;calculate.max.eigen&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;jk.data&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+a &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;theta.hat&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;jk.theta&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;theta.hat&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;jk.theta&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For our example, we obtain $a=0.103$.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;em&gt;Step 3&lt;/em&gt;: The bias-corrected $\alpha/2$ endpoints for the percentile bootstrap confidence interval are then calculated as:
+&lt;script type=&quot;math/tex&quot;&gt;\hat{\theta}_{BC_a}[\alpha/2] = \hat{G}^{-1} \left( \Phi \left(z_0 + \dfrac{z_0+z_{\alpha/2}}{1-a(z_0+z_{\alpha/2})} \right)\right),&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;where $\hat{G}^{-1}(\cdot)$ is the quantile function of the bootstrap distribution.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In R:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;q.lb &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; pnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+q.ub &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; pnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z0&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;qnorm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+
+quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;q.lb&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+quantile&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;q.ub&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+We find that the BCa percentiles we should be using are actually 9.70% and 99.85% instead of 2.5% and 97.5% for a 95% confidence interval. Thus, we obtain a confidence interval of [322.0132,1320.345].&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Canty, A.J., A.C. Davison and D.V. Hinkley. (1996). “Comment on ‘Bootstrap Confidence Intervals’.” &lt;em&gt;Statistical Science&lt;/em&gt; 11(3):214-219.&lt;/li&gt;
+  &lt;li&gt;DiCiccio, Thomas J. and Bradley Efron. (1996). “Bootstrap Confidence Intervals.” &lt;em&gt;Statistical Science&lt;/em&gt; 11(3):189-228.&lt;/li&gt;
+  &lt;li&gt;Efron, B. and Tibshirani R. (1993). &lt;em&gt;An Introduction to the Bootstrap&lt;/em&gt;. Chapman and Hall, New York.&lt;/li&gt;
+  &lt;li&gt;Hall. (1988). “Theoretical comparison of bootstrap confidence intervals (with discussion).” &lt;em&gt;Ann. Statist.&lt;/em&gt; 16: 927-985.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Code for calculating maximum eigenvalue:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kn&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;reshape2&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+calculate.max.eigen &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    n &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nrow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    k &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;ncol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    df.melt &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; melt&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kp&quot;&gt;colnames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df.melt&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;score&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    df.melt&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;n&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;times&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;k&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;kp&quot;&gt;colnames&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df.melt&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;student&amp;quot;&lt;/span&gt;
+    lm.out &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; lm&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;score&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;test&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;student&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;data&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;df.melt&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    score.hat &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; predict&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;lm.out&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; df.melt&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    data.hat &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;score.hat&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; nrow&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;n&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; ncol&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;k&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; byrow&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    demeaned.hat &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data.hat&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;MARGIN&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; x&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;colMeans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;data.hat&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;eigen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;demeaned.hat&lt;span class=&quot;o&quot;&gt;%*%&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;demeaned.hat&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;n&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; only.values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;values&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Code for density plot:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;kn&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ggplot2&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+df &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.theta&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ggplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;bs.theta&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_density&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;alpha&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; fill&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;coral&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+theme_bw&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_vline&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;xintercept&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;theta.hat&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_vline&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;xintercept&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;median&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;bs.sampling&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_x_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Bootstrapped Estimate of Max Eigenvalue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Density&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Thu, 01 Aug 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/bootstrap-confidence-interval-methods-in-r/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/bootstrap-confidence-interval-methods-in-r/</guid>
+        
+        <category>R</category>
+        
+        <category>bootstrapping</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Using ggplot2 to Plot Regression Coefficients with Confidence Intervals</title>
+        <description>&lt;p&gt;A graphical approach to displaying regression coefficients / effect sizes across multiple specifications can often be significantly more powerful and intuitive than presenting a regression table. Moreover, we can easily express uncertainty in the form of confidence intervals around our estimates. As a quick example, suppose that we wanted to compare the effect of British colonial status upon country-level corruption across multiple specifications and two methods (OLS and WLS) from the following paper: Treisman, Daniel. 2000. “The causes of corruption: a cross-national study,” &lt;em&gt;Journal of Public Economics&lt;/em&gt; 76: 399-457.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Specifically, the dependent variable is TI98, the perceived corruption score calculated by Transparency International for 1998. The variable whose effect we seek is an indicator that equals 1 if the country is a former British colony or the UK, and 0 otherwise. I took the coefficients and associated standard errors on British colonial status from Tables 2 and 3 across the 5 different specifications where TI98 is the dependent variable. I then entered them into a data frame with the following structure:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt; &lt;/td&gt; &lt;td&gt;coef&lt;/td&gt; &lt;td&gt;se&lt;/td&gt; &lt;td&gt; method&lt;/td&gt;&lt;td&gt;specification &lt;/td&gt; &lt;td&gt;lb &lt;/td&gt; &lt;td&gt;ub &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1 &lt;/td&gt; &lt;td&gt; -1.99&lt;/td&gt; &lt;td&gt;1.01&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;-3.969564&lt;/td&gt; &lt;td&gt;-0.01043638&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt; &lt;td&gt;-1.56&lt;/td&gt; &lt;td&gt;0.59&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;-2.716379&lt;/td&gt; &lt;td&gt;-0.40362125&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt; &lt;td&gt;-1.25&lt;/td&gt; &lt;td&gt;0.52&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;3 &lt;/td&gt; &lt;td&gt;-2.269181&lt;/td&gt; &lt;td&gt; -0.23081873&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt; &lt;td&gt;-1.20&lt;/td&gt; &lt;td&gt;0.54&lt;/td&gt; &lt;td&gt;WLS &lt;/td&gt; &lt;td&gt;4 &lt;/td&gt; &lt;td&gt; -2.258381&lt;/td&gt; &lt;td&gt; -0.14161945&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt; &lt;td&gt;-1.04&lt;/td&gt; &lt;td&gt;0.79&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt;-2.588372&lt;/td&gt; &lt;td&gt;  0.50837155&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt; &lt;td&gt;-1.25&lt;/td&gt; &lt;td&gt;0.81&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;1 &lt;/td&gt; &lt;td&gt;-2.837571&lt;/td&gt; &lt;td&gt;  0.33757083&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt; &lt;td&gt;-1.08&lt;/td&gt; &lt;td&gt;0.54&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;2 &lt;/td&gt; &lt;td&gt;-2.138381&lt;/td&gt; &lt;td&gt; -0.02161945&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt; &lt;td&gt;-0.98&lt;/td&gt; &lt;td&gt;0.53&lt;/td&gt; &lt;td&gt; OLS&lt;/td&gt; &lt;td&gt;3 &lt;/td&gt; &lt;td&gt;-2.018781&lt;/td&gt; &lt;td&gt;  0.05878091&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt; &lt;td&gt;-0.82&lt;/td&gt; &lt;td&gt;0.58&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;4 &lt;/td&gt; &lt;td&gt;-1.956779&lt;/td&gt; &lt;td&gt;  0.31677911&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt; &lt;td&gt;-1.06&lt;/td&gt; &lt;td&gt;0.96&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt;-2.941565&lt;/td&gt; &lt;td&gt;  0.82156543&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Note that I calculated the upper bound (ub) and lower bound (lb) of the 95% confidence interval using the standard errors provided in the table (I assumed normality holds due to the Central Limit Theorem, which may be questionable in some specifications given small sample sizes).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+I then generated the following plot:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/regcoef_ex1.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex1.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Here is the code for making this plot in ggplot2 from the dataframe I provided above:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;pd &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; position_dodge&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;height&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+ggplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;treisman&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;coef&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;shape&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_color_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;coral&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_shape_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+theme_bw&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_x_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Specification&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; breaks&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; labels&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Estimated effect of being a former British colony or the UK on TI98&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_errorbar&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ymin&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lb&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;ymax&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ub&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;code&gt;geom_errorbar()&lt;/code&gt; function plots the confidence intervals. Note that I use the &lt;code&gt;position_dodge()&lt;/code&gt; function to horizontally shift the coefficients and confidence intervals for the same specifications for clarity. The &lt;code&gt;height=NULL&lt;/code&gt; option can be omitted. The color and shape for the legend is controlled manually.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+What would happen if I just set &lt;code&gt;name=&quot;Method&quot;&lt;/code&gt; for the &lt;code&gt;scale_color_manual&lt;/code&gt; command, but left out the &lt;code&gt;scale_shape_manual&lt;/code&gt; command, letting it be automatically determined:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;ggplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;treisman&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;coef&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;shape&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_color_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;coral&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+theme_bw&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_x_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Specification&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; breaks&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; labels&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Estimated effect of being a former British colony or the UK on TI98&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+geom_errorbar&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ymin&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lb&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;ymax&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ub&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This would be the plot:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/regcoef_ex2.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex2.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+This happens because I also set the shape of the points to be determined by the method variable, just as for color. I thus I need to manually give the same name to both scales, or else otherwise they are automatically broken up into two legends, one manual titled “Method” and one automatic title “method”.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+What if I wanted to reorder the ordering of the methods in the plot; that is, if we wanted WLS to be plotted first, then OLS?&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+This can be achieved with the following command before running the first block of code on this page.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;df&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;method &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; reorder&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;each&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The result is the following:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/regcoef_ex3.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex3.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Finally, suppose that we wanted to customize the x-axis labels by tilting them diagonally and changing them to a dark grey. Adding the following extra piece of code to the blocks of code above would accomplish that:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; theme&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;axis.text.x&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;element_text&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;angle&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;darkgray&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 10 Jul 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/using-ggplot2-to-plot-regression-coefficients-with-confidence-intervals/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/using-ggplot2-to-plot-regression-coefficients-with-confidence-intervals/</guid>
+        
+        <category>R</category>
+        
+        <category>ggplot2</category>
+        
+        <category>regression</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>DAGs in R</title>
+        <description>&lt;p&gt;Following up on the previous post, another way to construct DAGs is using R. I think the &lt;a href=&quot;http://cran.r-project.org/web/packages/igraph/index.html&quot;&gt;igraph package&lt;/a&gt; is one of the customizable ways to do so. This is a powerful package designed for the visualization and analysis of networks and offers much more functionality than you will use for DAGs.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The R equivalent to the instrumental variables DAG constructed in TeX in the preceding post is the following:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/IVdag_igraph.jpg&quot;&gt;&lt;img alt=&quot;igraph DAG&quot; src=&quot;/assets/images/blog/IVdag_igraph.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To construct this in R, first you want to create an igraph object (with directed edges) as follows:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;g1 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; graph.formula&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;Z&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;Y&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;U&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; U&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;Y&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; U&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;Z&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; Z&lt;span class=&quot;o&quot;&gt;--+&lt;/span&gt;Y&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you just view the g1 object (by running &lt;code&gt;g1&lt;/code&gt;), you will see the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;IGRAPH DN&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; name &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;v&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This denotes that this is a directed named (DN) network with 4 vertices (nodes) and 6 edges. The names of the vertices are stored as an attribute (and correspond to the variable names: Z, T, U, Y). Note that we can access the vertex name attribute as &lt;code&gt;V(g1)$name&lt;/code&gt;. Running this will help us identify the order in which the vertices were entered into the igraph object:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;name
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Z&amp;quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;A&amp;quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Y&amp;quot;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;U&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To give the vertices custom attributes:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;name
+V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;color &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;black&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;white&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;size &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;
+V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label.cex &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;
+V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label.dist &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;
+V&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label.color &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;black&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now the edges (first see the edge sequence by running &lt;code&gt;E(g1)&lt;/code&gt;):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;color &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;black&amp;quot;&lt;/span&gt;
+E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;color&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;color&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;
+E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;lty &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label.color &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;
+E&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;label.cex &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you run &lt;code&gt;plot(g1)&lt;/code&gt; now, you will note that the igraph library automatically arranges the vertices. To manually override this arrangement, run the following command:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;tkplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This opens an interactive graphing screen that allows you to manually move around the vertices and arrange them as you want. Now, while leaving the popup window open, extract the new coordinates for the vertices as:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;coord.g1 &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; tkplot.getcoords&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;(Note that the 1 refers to the number of the interactive window – this one was the first I opened in this R session).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Now, pass these coordinates to the plotting of the igraph object (along with moving around the label location relative to the vertices):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;plot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;g1&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; layout&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;coord.g1&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;vertex.label.degree&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Thu, 20 Jun 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/dags-in-r/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/dags-in-r/</guid>
+        
+        <category>R</category>
+        
+        <category>causal inference</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>DAGs in LaTeX</title>
+        <description>&lt;p&gt;Directed acyclic graphs (DAGs) are commonly used to represent causal relationships between variables across a wide variety of disciplines. For an excellent (and quite accessible) textbook on the topic, please see the book &lt;a href=&quot;http://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/&quot;&gt;&lt;em&gt;Causal Inference&lt;/em&gt; by Miguel Hernan and Jamie Robins&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+In this post, I briefly explore how you can draw DAGs in LaTeX. In the subsequent post, I will show how to draw DAGs using R.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The first example of DAG is the common instrumental variable (IV) setup:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/IVdag_tex.jpg&quot;&gt;&lt;img alt=&quot;instrumental variables DAG latex&quot; src=&quot;/assets/images/blog/IVdag_tex.jpg&quot; height=&quot;100&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We seek to identify the effect of treatment &lt;em&gt;T&lt;/em&gt; on outcome &lt;em&gt;Y&lt;/em&gt;. However, this is confounded by an unmeasured variable &lt;em&gt;U&lt;/em&gt;. The IV is denoted as &lt;em&gt;Z&lt;/em&gt;. Technically, we do not need to put in the crossed out red edges between &lt;em&gt;U&lt;/em&gt; and &lt;em&gt;Z&lt;/em&gt; and &lt;em&gt;Z&lt;/em&gt; and &lt;em&gt;Y&lt;/em&gt; - absence of edges encodes independence relations. However, I included them to reinforce (and make explicit) the assumptions needed for identification of causal effects using IVs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(Quasi)-exogeneity of the instrument (no path from &lt;em&gt;U&lt;/em&gt; to &lt;em&gt;Z&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Exclusion restriction (no direct path from &lt;em&gt;Z&lt;/em&gt; to &lt;em&gt;Y&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This was made using the &lt;a href=&quot;http://pgf.sourceforge.net/&quot;&gt;TikZ&lt;/a&gt; package in LaTeX. I used the &lt;code&gt;\usepackage{pgf,tikz}&lt;/code&gt; command at the beginning of my document.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+The code to create the DAG above is:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;\begin&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;tikzpicture&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;% nodes %&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;Z&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;right &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt; of z&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt; of &lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;Y&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;draw&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; rectangle&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; dashed&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; above &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; of &lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;U&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;% edges %&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;red&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;dashed&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;node &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;X&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;u&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; red&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;dashed&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;z&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; to  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;out&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;270&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;270&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; looseness&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; node&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;X&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\end&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;tikzpicture&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note that I first create the nodes (corresponding to variables in the DAG), and then draw the directed edges between the nodes.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Another example of a DAG is a simple structural equation model where we want each edge to be marked with the parameter signifying the causal effect. For example:&lt;/p&gt;
+
+&lt;div class=&quot;post-image&quot;&gt;
+&lt;a href=&quot;/assets/images/blog/sem_dag.jpg&quot;&gt;&lt;img alt=&quot;structural equation model DAG latex&quot; src=&quot;/assets/images/blog/sem_dag.jpg&quot; height=&quot;120&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In LaTeX:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;\begin&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;tikzpicture&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;% nodes %&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;right &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt; of &lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;M&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+\node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.5&lt;/span&gt; of m&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; text centered&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;Y&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;% edges %&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;above&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;font&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;\footnotesize&lt;span class=&quot;p&quot;&gt;]{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;\&lt;span class=&quot;kp&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;m&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;above&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;font&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;\footnotesize&lt;span class=&quot;p&quot;&gt;]{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;\&lt;span class=&quot;kp&quot;&gt;gamma&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\draw&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; line width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; to  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;out&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;270&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;270&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; looseness&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; node&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;below&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; font&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;\footnotesize&lt;span class=&quot;p&quot;&gt;]{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;\delta&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;y&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+\end&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;tikzpicture&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 19 Jun 2013 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2013/dags-in-latex/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2013/dags-in-latex/</guid>
+        
+        <category>LaTeX</category>
+        
+        <category>causal inference</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
