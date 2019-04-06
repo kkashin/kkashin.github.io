@@ -7,6 +7,9 @@ bundle exec jekyll build
 cp README.md _site/
 cd _site
 
+# add CNAME for custom domain name
+echo "konstantinkashin.com" > CNAME
+
 # deploy
 git init
 git add --all
