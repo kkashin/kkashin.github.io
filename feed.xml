@@ -5,9 +5,30 @@
     <description>Konstantin Kashin is an Engineering Manager at Facebook, interested in causal inference, experimentation, and optimization.</description>
     <link>http://konstantinkashin.com/</link>
     <atom:link href="http://konstantinkashin.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Apr 2019 13:02:52 -0400</pubDate>
-    <lastBuildDate>Sat, 06 Apr 2019 13:02:52 -0400</lastBuildDate>
+    <pubDate>Sun, 19 May 2019 23:41:54 -0400</pubDate>
+    <lastBuildDate>Sun, 19 May 2019 23:41:54 -0400</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Adaptive Experimentation Tools Open Sourced at F8</title>
+        <description>&lt;p&gt;For most of my time at Facebook, I have been working on tools for adaptive experimentation, the machine-learning guided process of iteratively exploring a (possibly infinite) parameter space in order to identify optimal configurations in a resource-efficient manner. This work has culminated in the development of Ax – an accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments.&lt;/p&gt;
+
+&lt;p&gt;I am really proud to announce that Ax is available as an open-source library. You can check out the tool at &lt;a href=&quot;https://ax.dev&quot;&gt;ax.dev&lt;/a&gt; or on &lt;a href=&quot;https://github.com/facebook/Ax&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ax is accompanied by a sister library for Bayesian Optimization built on PyTorch, &lt;a href=&quot;https://botorch.org/&quot;&gt;BoTorch&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I presented an overview of Ax and BoTorch at F8, Facebook’s Developer Conference. See the presentation &lt;a href=&quot;https://developers.facebook.com/videos/2019/product-optimization-with-adaptive-experimentation/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also &lt;a href=&quot;https://ai.facebook.com/blog/open-sourcing-ax-and-botorch-new-ai-tools-for-adaptive-experimentation/&quot;&gt;read more about Ax and BoTorch on Facebook AI Blog&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 02 May 2019 00:00:00 -0400</pubDate>
+        <link>http://konstantinkashin.com/2019/f8/</link>
+        <guid isPermaLink="true">http://konstantinkashin.com/2019/f8/</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Adaptive Experimentation at NeurIPS Systems for ML Workshop</title>
@@ -472,121 +493,6 @@ scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&
         <category>R</category>
         
         <category>bootstrapping</category>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Using ggplot2 to Plot Regression Coefficients with Confidence Intervals</title>
-        <description>&lt;p&gt;A graphical approach to displaying regression coefficients / effect sizes across multiple specifications can often be significantly more powerful and intuitive than presenting a regression table. Moreover, we can easily express uncertainty in the form of confidence intervals around our estimates. As a quick example, suppose that we wanted to compare the effect of British colonial status upon country-level corruption across multiple specifications and two methods (OLS and WLS) from the following paper: Treisman, Daniel. 2000. “The causes of corruption: a cross-national study,” &lt;em&gt;Journal of Public Economics&lt;/em&gt; 76: 399-457.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Specifically, the dependent variable is TI98, the perceived corruption score calculated by Transparency International for 1998. The variable whose effect we seek is an indicator that equals 1 if the country is a former British colony or the UK, and 0 otherwise. I took the coefficients and associated standard errors on British colonial status from Tables 2 and 3 across the 5 different specifications where TI98 is the dependent variable. I then entered them into a data frame with the following structure:&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt; &lt;/td&gt; &lt;td&gt;coef&lt;/td&gt; &lt;td&gt;se&lt;/td&gt; &lt;td&gt; method&lt;/td&gt;&lt;td&gt;specification &lt;/td&gt; &lt;td&gt;lb &lt;/td&gt; &lt;td&gt;ub &lt;/td&gt; &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1 &lt;/td&gt; &lt;td&gt; -1.99&lt;/td&gt; &lt;td&gt;1.01&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;-3.969564&lt;/td&gt; &lt;td&gt;-0.01043638&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt; &lt;td&gt;-1.56&lt;/td&gt; &lt;td&gt;0.59&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;-2.716379&lt;/td&gt; &lt;td&gt;-0.40362125&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt; &lt;td&gt;-1.25&lt;/td&gt; &lt;td&gt;0.52&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;3 &lt;/td&gt; &lt;td&gt;-2.269181&lt;/td&gt; &lt;td&gt; -0.23081873&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt; &lt;td&gt;-1.20&lt;/td&gt; &lt;td&gt;0.54&lt;/td&gt; &lt;td&gt;WLS &lt;/td&gt; &lt;td&gt;4 &lt;/td&gt; &lt;td&gt; -2.258381&lt;/td&gt; &lt;td&gt; -0.14161945&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt; &lt;td&gt;-1.04&lt;/td&gt; &lt;td&gt;0.79&lt;/td&gt; &lt;td&gt;WLS&lt;/td&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt;-2.588372&lt;/td&gt; &lt;td&gt;  0.50837155&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt; &lt;td&gt;-1.25&lt;/td&gt; &lt;td&gt;0.81&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;1 &lt;/td&gt; &lt;td&gt;-2.837571&lt;/td&gt; &lt;td&gt;  0.33757083&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;7&lt;/td&gt; &lt;td&gt;-1.08&lt;/td&gt; &lt;td&gt;0.54&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;2 &lt;/td&gt; &lt;td&gt;-2.138381&lt;/td&gt; &lt;td&gt; -0.02161945&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;8&lt;/td&gt; &lt;td&gt;-0.98&lt;/td&gt; &lt;td&gt;0.53&lt;/td&gt; &lt;td&gt; OLS&lt;/td&gt; &lt;td&gt;3 &lt;/td&gt; &lt;td&gt;-2.018781&lt;/td&gt; &lt;td&gt;  0.05878091&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;9&lt;/td&gt; &lt;td&gt;-0.82&lt;/td&gt; &lt;td&gt;0.58&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;4 &lt;/td&gt; &lt;td&gt;-1.956779&lt;/td&gt; &lt;td&gt;  0.31677911&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;10&lt;/td&gt; &lt;td&gt;-1.06&lt;/td&gt; &lt;td&gt;0.96&lt;/td&gt; &lt;td&gt;OLS&lt;/td&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt;-2.941565&lt;/td&gt; &lt;td&gt;  0.82156543&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Note that I calculated the upper bound (ub) and lower bound (lb) of the 95% confidence interval using the standard errors provided in the table (I assumed normality holds due to the Central Limit Theorem, which may be questionable in some specifications given small sample sizes).&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-I then generated the following plot:&lt;/p&gt;
-
-&lt;div class=&quot;post-image&quot;&gt;
-&lt;a href=&quot;/assets/images/blog/regcoef_ex1.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex1.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Here is the code for making this plot in ggplot2 from the dataframe I provided above:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;pd &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; position_dodge&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;height&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-ggplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;treisman&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;coef&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;shape&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_color_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;coral&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_shape_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-theme_bw&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_x_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Specification&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; breaks&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; labels&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Estimated effect of being a former British colony or the UK on TI98&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-geom_errorbar&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ymin&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lb&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;ymax&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ub&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The &lt;code&gt;geom_errorbar()&lt;/code&gt; function plots the confidence intervals. Note that I use the &lt;code&gt;position_dodge()&lt;/code&gt; function to horizontally shift the coefficients and confidence intervals for the same specifications for clarity. The &lt;code&gt;height=NULL&lt;/code&gt; option can be omitted. The color and shape for the legend is controlled manually.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-What would happen if I just set &lt;code&gt;name=&quot;Method&quot;&lt;/code&gt; for the &lt;code&gt;scale_color_manual&lt;/code&gt; command, but left out the &lt;code&gt;scale_shape_manual&lt;/code&gt; command, letting it be automatically determined:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;ggplot&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;treisman&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;coef&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-geom_point&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;shape&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;size&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_color_manual&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Method&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;values&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;coral&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;steelblue&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-theme_bw&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_x_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Specification&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; breaks&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; labels&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;specification&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-scale_y_continuous&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Estimated effect of being a former British colony or the UK on TI98&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-geom_errorbar&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;aes&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;ymin&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;lb&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;ymax&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ub&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;width&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;position&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;pd&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;This would be the plot:&lt;/p&gt;
-
-&lt;div class=&quot;post-image&quot;&gt;
-&lt;a href=&quot;/assets/images/blog/regcoef_ex2.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex2.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-This happens because I also set the shape of the points to be determined by the method variable, just as for color. I thus I need to manually give the same name to both scales, or else otherwise they are automatically broken up into two legends, one manual titled “Method” and one automatic title “method”.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-What if I wanted to reorder the ordering of the methods in the plot; that is, if we wanted WLS to be plotted first, then OLS?&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;
-This can be achieved with the following command before running the first block of code on this page.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;df&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;method &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; reorder&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;df&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;method&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;rep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;each&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The result is the following:&lt;/p&gt;
-
-&lt;div class=&quot;post-image&quot;&gt;
-&lt;a href=&quot;/assets/images/blog/regcoef_ex3.jpg&quot;&gt;&lt;img alt=&quot;regression coefficients&quot; src=&quot;/assets/images/blog/regcoef_ex3.jpg&quot; height=&quot;320&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;
-Finally, suppose that we wanted to customize the x-axis labels by tilting them diagonally and changing them to a dark grey. Adding the following extra piece of code to the blocks of code above would accomplish that:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; theme&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;axis.text.x&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;element_text&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;angle&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;color&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;darkgray&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Wed, 10 Jul 2013 00:00:00 -0400</pubDate>
-        <link>http://konstantinkashin.com/2013/using-ggplot2-to-plot-regression-coefficients-with-confidence-intervals/</link>
-        <guid isPermaLink="true">http://konstantinkashin.com/2013/using-ggplot2-to-plot-regression-coefficients-with-confidence-intervals/</guid>
-        
-        <category>R</category>
-        
-        <category>ggplot2</category>
-        
-        <category>regression</category>
         
         
         <category>blog</category>
