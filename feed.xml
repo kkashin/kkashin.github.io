@@ -3,10 +3,10 @@
   <channel>
     <title>Konstantin Kashin</title>
     <description>Konstantin Kashin is an Engineering Manager at Meta, interested in AI, causal inference, experimentation, and optimization.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Nov 2024 14:07:34 -0500</pubDate>
-    <lastBuildDate>Sat, 30 Nov 2024 14:07:34 -0500</lastBuildDate>
+    <link>http://kkashin.com/</link>
+    <atom:link href="http://kkashin.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 30 Nov 2024 21:44:52 -0500</pubDate>
+    <lastBuildDate>Sat, 30 Nov 2024 21:44:52 -0500</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -22,8 +22,8 @@
 &lt;p&gt;You can also &lt;a href=&quot;https://ai.facebook.com/blog/open-sourcing-ax-and-botorch-new-ai-tools-for-adaptive-experimentation/&quot;&gt;read more about Ax and BoTorch on Facebook AI Blog&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 02 May 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2019/f8/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/f8/</guid>
+        <link>http://kkashin.com/2019/f8/</link>
+        <guid isPermaLink="true">http://kkashin.com/2019/f8/</guid>
         
         
         <category>blog</category>
@@ -40,8 +40,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 10 Dec 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2018/systems-for-ml/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/systems-for-ml/</guid>
+        <link>http://kkashin.com/2018/systems-for-ml/</link>
+        <guid isPermaLink="true">http://kkashin.com/2018/systems-for-ml/</guid>
         
         
         <category>blog</category>
@@ -53,8 +53,8 @@
         <description>&lt;p&gt;My article with &lt;a href=&quot;http://polisci.emory.edu/home/people/faculty/glynn-adam.html&quot;&gt;Adam Glynn&lt;/a&gt;, entitled “Front-Door Versus Back-Door Adjustment With Unmeasured Confounding: Bias Formulas for Front-Door and Hybrid Adjustments With Application to a Job Training Program”, is now available online on the &lt;a href=&quot;https://amstat.tandfonline.com/doi/abs/10.1080/01621459.2017.1398657#.XKjRu-tKgk8&quot;&gt;JASA website&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 Oct 2018 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2018/jasa/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/jasa/</guid>
+        <link>http://kkashin.com/2018/jasa/</link>
+        <guid isPermaLink="true">http://kkashin.com/2018/jasa/</guid>
         
         
         <category>blog</category>
@@ -78,8 +78,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 04 Dec 2014 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2014/big-data-unl/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/big-data-unl/</guid>
+        <link>http://kkashin.com/2014/big-data-unl/</link>
+        <guid isPermaLink="true">http://kkashin.com/2014/big-data-unl/</guid>
         
         <category>big data</category>
         
@@ -98,8 +98,8 @@
 I’ve uploaded a few of my visualizations &lt;a href=&quot;http://databits.io/kkashin&quot;&gt;here&lt;/a&gt; and hope to upload more in the near future. One of the nice features of Databits is the ease with which you can embed a visualization in another website.&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Nov 2014 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2014/databits/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/databits/</guid>
+        <link>http://kkashin.com/2014/databits/</link>
+        <guid isPermaLink="true">http://kkashin.com/2014/databits/</guid>
         
         <category>data visualization</category>
         
@@ -178,8 +178,8 @@ R confirms our analytic solution.
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 29 Apr 2014 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2014/theory-maximum-likelihood-estimation/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/theory-maximum-likelihood-estimation/</guid>
+        <link>http://kkashin.com/2014/theory-maximum-likelihood-estimation/</link>
+        <guid isPermaLink="true">http://kkashin.com/2014/theory-maximum-likelihood-estimation/</guid>
         
         <category>statistics</category>
         
@@ -217,8 +217,8 @@ For those new to D3.js, here are some great resources for getting started:&lt;/p
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 22 Dec 2013 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/2013/network-visualization-with-d3js/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/network-visualization-with-d3js/</guid>
+        <link>http://kkashin.com/2013/network-visualization-with-d3js/</link>
+        <guid isPermaLink="true">http://kkashin.com/2013/network-visualization-with-d3js/</guid>
         
         <category>data visualization</category>
         
@@ -252,8 +252,8 @@ brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;antiword&lt;/code&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;system&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;antiword foo.doc &amp;gt; foo.txt&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Wed, 25 Sep 2013 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2013/scraping-pdfs-and-word-documents-with-python/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/scraping-pdfs-and-word-documents-with-python/</guid>
+        <link>http://kkashin.com/2013/scraping-pdfs-and-word-documents-with-python/</link>
+        <guid isPermaLink="true">http://kkashin.com/2013/scraping-pdfs-and-word-documents-with-python/</guid>
         
         <category>python</category>
         
@@ -271,8 +271,8 @@ brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;antiword&lt;/code&gt;
 &lt;p&gt;&lt;a href=&quot;/assets/gov2000/bivar_reg.pdf&quot;&gt;Note on Bivariate Regression: Connecting Practice and Theory&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Sep 2013 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2013/note-on-bivariate-regression/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/note-on-bivariate-regression/</guid>
+        <link>http://kkashin.com/2013/note-on-bivariate-regression/</link>
+        <guid isPermaLink="true">http://kkashin.com/2013/note-on-bivariate-regression/</guid>
         
         <category>regression</category>
         
@@ -486,8 +486,8 @@ We find that the BCa percentiles we should be using are actually 9.70% and 99.85
 
 </description>
         <pubDate>Thu, 01 Aug 2013 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2013/bootstrap-confidence-interval-methods-in-r/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/bootstrap-confidence-interval-methods-in-r/</guid>
+        <link>http://kkashin.com/2013/bootstrap-confidence-interval-methods-in-r/</link>
+        <guid isPermaLink="true">http://kkashin.com/2013/bootstrap-confidence-interval-methods-in-r/</guid>
         
         <category>R</category>
         
