@@ -8,10 +8,10 @@ cp README.md _site/
 cd _site
 
 # add CNAME for custom domain name
-echo "konstantinkashin.com" > CNAME
+echo "kkashin.com" > CNAME
 
 # deploy
 git init
 git add --all
 git commit -m "Deploy to GitHub Pages"
-git push --force "https://github.com/kkashin/kkashin.github.io" master:master
+git push --force "https://github.com/kkashin/kkashin.github.io.git" main:master

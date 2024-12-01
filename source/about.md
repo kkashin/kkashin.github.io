@@ -8,11 +8,11 @@ permalink: /about/
 
 <div class="col8">
 <p>
-I'm the Engineering Manager for the Adaptive Experimentation group within Facebook's Core Data Science team. I joined Facebook as a Data Scientist in September 2015.
+I'm the Engineering Manager in the AI Training organization at Meta. I was previously on the Adaptive Experimentation group within Facebook's Core Data Science team, which I initially joined in September 2015.
 </p>
 
 <p>
-I was born in Moscow, Russia and grew up dividing my time between the United States and Russia. I holds an A.M. in Political Science (2012), an A.M. in Statistics (2013), and a Ph.D. in Political Science (2015) from Harvard University. I received my Bachelor of Arts degree in Economics and International Relations from Brown University, from where I graduated magna cum laude in 2010.
+I was born in Moscow, Russia and grew up dividing my time between the United States and Russia. I hold an A.M. in Political Science (2012), an A.M. in Statistics (2013), and a Ph.D. in Political Science (2015) from Harvard University. I received my Bachelor of Arts degree in Economics and International Relations from Brown University, from where I graduated magna cum laude in 2010.
 </p>
 
 

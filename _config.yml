@@ -1,8 +1,8 @@
 # SEO settings
 title: "Konstantin Kashin"
-description: "Konstantin Kashin is an Engineering Manager at Facebook, interested in causal inference, experimentation, and optimization."
-keywords: "data science, engineering, causal inference, A/B testing, experimentation, optimization"
-url: http://konstantinkashin.com
+description: "Konstantin Kashin is an Engineering Manager at Meta, interested in AI, causal inference, experimentation, and optimization."
+keywords: "artificial intelligence, AI, data science, engineering, causal inference, A/B testing, experimentation, optimization"
+url: http://kkashin.com
 baseurl: null
 
 google_analytics: UA-29054835-1
@@ -20,6 +20,8 @@ comments: true
 source: source
 destination: _site
 
+gems: [bourbon]
+
 # Sass configuration
 sass:
   sass_dir: assets/scss
@@ -29,10 +31,10 @@ sass:
 author:
   name     : Konstantin Kashin
   job      : Engineering Manager
-  bio      : "Engineering Manager at Facebook."
+  bio      : "Engineering Manager at Meta."
   thumb    : /images/author.jpg
-  email    : kkashin@fb.com
-  url      : http://konstantinkashin.com
+  email    : kkashin@meta.com
+  url      : http://kkashin.com
   github   : http://github.com/kkashin
   linkedin : https://linkedin.com/in/konstantin-kashin-8939a492/
 
